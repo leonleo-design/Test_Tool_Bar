@@ -15,7 +15,15 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gaoguanbianselong3"
+                android:contentDescription="@string/order_details_hint"
+                app:layout_collapseMode="parallax"/>
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:id="@+id/toolbar1"
@@ -53,6 +61,12 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/changedfab_foreground"
+        android:layout_gravity="end|bottom"
+        android:onClick="onClickDone"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
