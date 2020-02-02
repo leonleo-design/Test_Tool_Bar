@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
+    tools:context=".Bit_and_Pizza_Activity">
     <item
-        android:title="@string/create_order"
+        android:title="@string/creat_order"
         android:id="@+id/create_order"
         android:icon="@drawable/creat_order_foreground"
         android:orderInCategory="1"

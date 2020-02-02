@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OrderActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/create_order"></activity>
+        <activity android:name=".TestOrder"
+            android:label="@string/create_order"
+            android:parentActivityName=".Bit_and_Pizza_Activity"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".OrderActivity"
+            android:label="@string/create_order"
+            android:parentActivityName=".Bit_and_Pizza_Activity" />
+        <activity
+            android:name=".Bit_and_Pizza_Activity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

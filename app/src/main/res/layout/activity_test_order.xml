@@ -6,24 +6,26 @@
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderActivity">
+    android:orientation="vertical"
+    tools:context=".TestOrder">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar1"
                 android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
                 app:layout_collapseMode="pin"/>
 
-          </com.google.android.material.appbar.CollapsingToolbarLayout>
-         </com.google.android.material.appbar.AppBarLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,16 +34,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:id="@+id/text_container"
             android:padding="16dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/order_name_hint"/>
+                android:hint="@string/order_name_hint"
+                android:inputType="text"
+                android:autofillHints="@string/order_name_hint"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/order_details_hint"/>
+                android:hint="@string/order_details_hint"
+                android:inputType="text"
+                android:autofillHints="@string/order_details_hint"/>
+
+
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
 

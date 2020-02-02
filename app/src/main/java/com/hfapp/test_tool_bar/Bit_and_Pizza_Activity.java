@@ -19,7 +19,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class Bit_and_Pizza_Activity extends AppCompatActivity {
     private ShareActionProvider shareActionProvider;
 
     @Override
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.create_order:
-                Intent intent=new Intent(this,OrderActivity.class);
+                Intent intent=new Intent(this,TestOrder.class);
                 startActivity(intent);
                 return true;
             case R.id.setting:
