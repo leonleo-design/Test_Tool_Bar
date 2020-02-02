@@ -1,10 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.hfapp.test_tool_bar.MainActivity">
+    tools:context=".MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:title="@string/create_order"
+        android:id="@+id/create_order"
+        android:icon="@drawable/creat_order_foreground"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+    <item
+        android:title="@string/share"
+        android:id="@+id/share"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>
+    <item
+        android:id="@+id/setting"
+        android:title="@string/setting"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="never"/>
+
+
 </menu>
